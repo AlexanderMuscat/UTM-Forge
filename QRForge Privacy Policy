@@ -1,0 +1,58 @@
+QR Forge Privacy Policy
+Last updated: May 15, 2026
+QR Forge is built with privacy as a core principle. This policy explains what data the extension handles, where it stays, and what it never does.
+
+The short version
+
+QR Forge runs entirely in your browser.
+Your QR codes, history, and favorites are stored locally on your device.
+Nothing is sent to any server. There is no backend.
+No tracking, no analytics, no ads, no accounts.
+
+
+What QR Forge stores locally
+The extension uses Chrome's local storage to save:
+
+Your QR history — the URLs, text, Wi-Fi credentials, contact details, or other content you've encoded into QR codes, along with their visual settings (colors, margin, error correction, logo overlay)
+Your favorites — the same data for any QR code you've explicitly starred
+Your preferences — UI state such as whether you've dismissed the onboarding tip
+
+This data lives only on your device, in your browser's local storage. It is not synced, transmitted, or accessible to anyone but you. If you uninstall the extension, all of it is permanently deleted.
+
+What QR Forge does NOT do
+
+❌ No data is sent to QR Forge, Anthropic, or any third party
+❌ No analytics or usage tracking
+❌ No advertising, no ad networks
+❌ No user accounts or sign-in
+❌ No collection of personal information, browsing history, or website content
+❌ No selling, sharing, or transfer of your data to anyone
+
+
+What permissions are used and why
+
+storage — to save your QR history, favorites, and preferences locally
+clipboardWrite — to copy generated QR images and favorite URLs to your clipboard when you click "Copy"
+activeTab / tabs — to read the current tab's URL only when you explicitly click "Use Current Tab"
+contextMenus — to add the QR Forge right-click menu
+scripting — to write to the clipboard when you copy a favorite from the right-click menu
+notifications — to confirm clipboard actions visually
+offscreen — as a clipboard fallback on pages where script injection isn't allowed (e.g., chrome:// pages)
+<all_urls> (host permission) — required for the right-click context menu to work on any page you visit. The extension does not read or transmit page content.
+
+
+QR code scanning
+When you decode a QR code (by dragging an image into the Scan tab or right-clicking a QR image on a webpage), the image is processed entirely within your browser using a local JavaScript library. Nothing is uploaded.
+
+Logos and uploaded images
+If you upload a logo image to embed in a QR code, it is read locally by your browser and stored as part of that QR code's local entry. The logo never leaves your device.
+
+Children's privacy
+QR Forge does not knowingly collect any data from anyone, including children. There is no data collection at all.
+
+Changes to this policy
+If a future version of QR Forge ever changes how it handles data, this policy will be updated and the version date above will reflect the change. Material changes will also be noted in the extension's release notes.
+
+Contact
+Questions or concerns about this policy or QR Forge in general:
+muscat.alexj@gmail.com
