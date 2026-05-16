@@ -1,0 +1,51 @@
+File Forge — Privacy Policy
+Effective date: May 15, 2026
+The short version
+File Forge does not collect, transmit, store, sell, or share any user data. All file conversions and operations happen locally inside your browser. Your files never leave your device.
+There are no servers. There is no account system. There is no analytics, telemetry, or tracking. The extension makes zero outbound network requests.
+What File Forge does with your data
+When you use File Forge to convert or operate on a file, the following happens entirely within your browser:
+
+The file you drop, paste, or right-click is read into memory by the extension
+The conversion or operation is performed locally using bundled JavaScript libraries (PDF.js, pdf-lib, SheetJS, JSZip, lamejs, gif.js, Tesseract.js)
+The resulting file is offered to you as a download
+
+At no point during this process is your file, its contents, its name, or any metadata about it transmitted to any server operated by File Forge, the developer, or any third party. The extension has no host permissions and cannot read the contents of any website you visit.
+What File Forge stores
+File Forge uses two small pieces of local browser storage. Both stay on your device.
+chrome.storage.session — temporarily holds a single file payload when you invoke File Forge from a right-click context menu, so the extension popup can retrieve it. This storage is cleared when Chrome closes and entries expire after 30 seconds regardless. Nothing in this storage is ever transmitted.
+localStorage — stores a small list of your recently-used operations per tab (for example, "Compress to size · 2 minutes ago"), so File Forge can offer one-click re-runs. This list is capped at five entries per tab, lives only in your browser, and is never transmitted. You can clear it by clearing your browser data for the extension.
+File Forge does not store the contents of any file you convert.
+What File Forge does NOT do
+
+Send files, file metadata, or file contents to any server
+Make any network requests, ever (you can verify this in Chrome DevTools' Network tab while the extension runs)
+Read or modify the content of any website you visit
+Track which features you use
+Log usage, errors, or crashes to any remote service
+Identify you, your device, or your browser to anyone
+Share, sell, or rent data of any kind, because no data exists to share
+Use cookies, fingerprinting, or any other identification technique
+Display advertisements or sponsored content
+
+Permissions used and what they're for
+File Forge requests the minimum permissions needed for its features. Each is used only as described:
+
+contextMenus — adds the "File Forge" submenu to your right-click menu
+activeTab — when you click a File Forge right-click menu item, grants temporary access to the current tab so File Forge can read the right-clicked image. Access ends when you close the tab or switch away
+scripting — runs a one-time script in the current tab to extract the right-clicked image as a data URL
+storage — uses chrome.storage.session to pass the file payload from the right-click handler to the popup as described above
+clipboardRead — reads the clipboard when you press Ctrl/Cmd+V or click "Paste image", so File Forge can pull in screenshots and copied text
+
+File Forge does not request host_permissions, so it cannot run on, inject into, or read content from any website unless you explicitly invoke it via the right-click menu on that page.
+Third-party services
+File Forge uses no third-party services. All processing libraries are bundled into the extension and run locally. There are no SDKs, no analytics scripts, no font CDNs, no error-reporting services, and no remote configuration.
+OCR (text extraction from images)
+When you use the "Extract text (OCR)" operation, File Forge processes the image entirely on your device using a bundled copy of Tesseract.js along with bundled English language data. The image is never transmitted. OCR runs in a local Web Worker inside your browser.
+Children's privacy
+File Forge does not collect data from anyone, including children. The extension can be used by anyone and operates the same way regardless of who is using it.
+Changes to this policy
+If File Forge's behavior ever changes in a way that affects this policy — for example, if a future feature requires a network request — this policy will be updated before that feature ships, and the change will be noted in the extension's Chrome Web Store changelog.
+The intent of File Forge is to remain a fully local tool. Adding any form of data collection would contradict the project's stated purpose.
+Contact
+Questions, concerns, or reports about this policy or about File Forge's privacy practices can be sent to: muscat.alexj@gmail.com
