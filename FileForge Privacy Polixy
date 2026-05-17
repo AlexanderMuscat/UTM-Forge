@@ -1,5 +1,5 @@
 File Forge — Privacy Policy
-Effective date: May 15, 2026
+Effective date: May 16, 2026
 The short version
 File Forge does not collect, transmit, store, sell, or share any user data. All file conversions and operations happen locally inside your browser. Your files never leave your device.
 There are no servers. There is no account system. There is no analytics, telemetry, or tracking. The extension makes zero outbound network requests.
@@ -8,6 +8,7 @@ When you use File Forge to convert or operate on a file, the following happens e
 
 The file you drop, paste, or right-click is read into memory by the extension
 The conversion or operation is performed locally using bundled JavaScript libraries (PDF.js, pdf-lib, SheetJS, JSZip, lamejs, gif.js, Tesseract.js)
+For audio files, the file is briefly decoded in-browser when dropped so its duration can populate the trim end field — this decoding uses the Web Audio API and never sends data anywhere
 The resulting file is offered to you as a download
 
 At no point during this process is your file, its contents, its name, or any metadata about it transmitted to any server operated by File Forge, the developer, or any third party. The extension has no host permissions and cannot read the contents of any website you visit.
