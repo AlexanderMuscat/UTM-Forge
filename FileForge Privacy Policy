@@ -1,12 +1,12 @@
 File Forge — Privacy Policy
-Effective date: May 16, 2026
+Effective date: May 20, 2026
 The short version
 File Forge does not collect, transmit, store, sell, or share any user data. All file conversions and operations happen locally inside your browser. Your files never leave your device.
 There are no servers. There is no account system. There is no analytics, telemetry, or tracking. The extension makes zero outbound network requests.
 What File Forge does with your data
 When you use File Forge to convert or operate on a file, the following happens entirely within your browser:
 
-The file you drop, paste, or right-click is read into memory by the extension
+The file you drop or select is read into memory by the extension
 The conversion or operation is performed locally using bundled JavaScript libraries (PDF.js, pdf-lib, SheetJS, JSZip, lamejs, gif.js, Tesseract.js)
 For audio files, the file is briefly decoded in-browser when dropped so its duration can populate the trim end field — this decoding uses the Web Audio API and never sends data anywhere
 The resulting file is offered to you as a download
@@ -36,7 +36,6 @@ contextMenus — adds the "File Forge" submenu to your right-click menu
 activeTab — when you click a File Forge right-click menu item, grants temporary access to the current tab so File Forge can read the right-clicked image. Access ends when you close the tab or switch away
 scripting — runs a one-time script in the current tab to extract the right-clicked image as a data URL
 storage — uses chrome.storage.session to pass the file payload from the right-click handler to the popup as described above
-clipboardRead — reads the clipboard when you press Ctrl/Cmd+V or click "Paste image", so File Forge can pull in screenshots and copied text
 
 File Forge does not request host_permissions, so it cannot run on, inject into, or read content from any website unless you explicitly invoke it via the right-click menu on that page.
 Third-party services
